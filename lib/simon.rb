@@ -13,6 +13,8 @@ class Simon
 
   def play
     until @game_over
+      puts "Let's play Simon get ready"
+      sleep 0.75
       take_turn
       system("clear")
     end
@@ -73,3 +75,4 @@ class Simon
   end
 end
 
+Simon.new.play
